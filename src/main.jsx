@@ -11,8 +11,10 @@ import Document from "./routes/Document";
 import Project from "./routes/Project";
 import Contact from "./routes/Contact";
 import DocumentPage from "./components/document/DocumentPage";
-// import FirstMeeting from "./components/document/FirstMeeting";
-// import SecondMeeting from "./components/document/SecondMeeting";
+import Timeline from "./routes/Timeline";
+import FirstMeeting from "./components/document/FirstMeeting";
+import SecondMeeting from "./components/document/SecondMeeting";
+import ThirdMeeting from "./components/document/ThirdMeeting";
 
 const router = createBrowserRouter([
   {
@@ -39,19 +41,27 @@ const router = createBrowserRouter([
             path: "",
             element: <DocumentPage />,
           },
-          // {
-          //   path: "first-meeting",
-          //   element: <FirstMeeting />,
-          // },
-          // {
-          //   path: "second-meeting",
-          //   element: <SecondMeeting />,
-          // },
+          {
+            path: "first-meeting",
+            element: <FirstMeeting />,
+          },
+          {
+            path: "second-meeting",
+            element: <SecondMeeting />,
+          },
+          {
+            path: "third-meeting",
+            element: <ThirdMeeting />,
+          },
         ],
       },
       {
         path: "project",
         element: <Project />,
+      },
+      {
+        path: "timeline",
+        element: <Timeline />,
       },
       {
         path: "contact",
