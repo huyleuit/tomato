@@ -17,13 +17,18 @@ const navList = [
     url: "/contract",
   },
   {
-    label: "Tài liệu",
+    // label: "Tài liệu",
+    label: "Tiến độ",
     url: "/document",
   },
   {
     label: "Đồ án",
     url: "/project",
   },
+  // {
+  //   label: "Timeline",
+  //   url: "/timeline",
+  // },
   {
     label: "Liên hệ",
     url: "/contact",
