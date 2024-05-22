@@ -27,7 +27,7 @@ const socialMediaList = [
 const Footer = () => {
   return (
     <div
-      className="w-full pt-14 "
+      className="w-full pt-14 relative z-10"
       style={{
         background: "linear-gradient(263deg, #ac4344 0%,#c5274b 100%)",
       }}
